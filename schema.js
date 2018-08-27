@@ -14,6 +14,20 @@ const customers = [
   { id: '1', name: 'Joe Doe', email: 'c@a.com', age: 15 }
 ];
 
+// GraphiQL query for customer:
+// {
+//   customer(id:"1"){
+//     name, age
+//   }
+// }
+
+// GraphiQL query for customers:
+// {
+//   customers{
+//     name
+//   }
+// }
+
 // Customer Type
 const CustomerType = new GraphQLObjectType({
   name: 'Customer',
